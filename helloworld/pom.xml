@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.example</groupId>
+	<artifactId>helloworld</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>Hello World with JavaFX</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>8.4.0</version>
+				<configuration>
+					<vendor>myself</vendor>
+					<mainClass>hello.HelloWorldApplication</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<id>create-jfxjar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>build-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
