@@ -14,7 +14,7 @@
 				<version>8.4.0</version>
 				<configuration>
 					<vendor>myself</vendor>
-					<mainClass>moneybags.MoneyBagApplication</mainClass>
+					<mainClass>animation.AnimationExampleApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>
